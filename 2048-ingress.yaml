@@ -8,9 +8,10 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/group.name: service-group
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:922383606859:certificate/87089004-85e5-40ad-a7cf-4b007db6547d
   labels:
     app: 2048-ingress
-
 spec:
   rules:
     - host: dev.codecanvas-mohit.online
