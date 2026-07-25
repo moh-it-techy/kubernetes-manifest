@@ -14,7 +14,7 @@ spec:
         app: "frontend"
     spec:
       containers:
-        - image: 922383606859.dkr.ecr.ap-south-1.amazonaws.com/mohit-cicd:3
+        - image: 922383606859.dkr.ecr.ap-south-1.amazonaws.com/mohit-cicd:4
           imagePullPolicy: Always
           name: "frontend"
           ports:
